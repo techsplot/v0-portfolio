@@ -46,11 +46,12 @@ export default function Home() {
               </Badge>
             </div>
             <h1 className="text-balance text-5xl md:text-6xl font-bold text-foreground">
-              Turn Complex Systems Into Clear Documentation
+              I Turn Complex Systems Into Clear, Production-Ready Documentation
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground text-balance">
-              I help engineering teams ship faster with production-ready documentation. DevOps pipelines, backend 
-              architecture, cloud infrastructure—explained with code-level precision that developers actually use.
+              I help engineering teams ship faster by creating documentation that developers actually use. From DevOps pipelines 
+              to backend architecture and cloud infrastructure—I transform complex systems into actionable guides with 
+              code-level precision.
             </p>
           </div>
 
