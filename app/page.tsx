@@ -306,20 +306,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Testimonial Section - TODO: UPDATE WITH REAL TESTIMONIAL */}
-        <section className="py-20 md:py-32 border-t border-border">
-          <blockquote className="border-l-4 border-accent pl-6 italic space-y-4">
-            <p className="text-xl md:text-2xl text-muted-foreground">
-              "Ayomide's technical documentation helped our team reduce onboarding time by 60%. His ability to 
-              translate complex systems into clear, actionable guides is exceptional."
-            </p>
-            <footer className="text-base text-foreground not-italic">
-              <strong>— Engineering Manager</strong>
-              <span className="text-muted-foreground"> at Tech Company</span>
-            </footer>
-          </blockquote>
-        </section>
-
         <section className="py-20 md:py-32 space-y-12 border-t border-border">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">Published On</h2>
