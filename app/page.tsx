@@ -118,37 +118,95 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Writing Focus Areas */}
+        {/* How I Help Teams Ship Faster */}
         <section className="py-20 md:py-32 space-y-12 border-t border-border">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Focus Areas</h2>
+          <div className="space-y-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">How I Help Teams Ship Faster</h2>
+            <p className="text-muted-foreground max-w-3xl">
+              I transform complex technical systems into clear, actionable documentation that accelerates developer onboarding 
+              and reduces integration time—no matter the technology stack.
+            </p>
+          </div>
+          
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-3">
-              <h3 className="text-lg font-semibold text-foreground">DevOps & Infrastructure</h3>
+            <div className="space-y-3 p-6 rounded-lg border border-border hover:border-accent transition-all group">
+              <div className="flex items-center gap-2">
+                <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center">
+                  <span className="text-accent font-semibold">01</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground group-hover:text-accent transition-colors">
+                  Code-Level Precision
+                </h3>
+              </div>
               <p className="text-muted-foreground leading-relaxed">
-                Container orchestration, CI/CD pipelines, self-hosted solutions, and cloud deployment strategies for
-                production environments.
+                I dive deep into your codebase—whether it's DevOps pipelines, backend APIs, cloud infrastructure, or 
+                frontend architecture—to create documentation with accurate code examples that developers can copy, paste, 
+                and deploy.
               </p>
             </div>
-            <div className="space-y-3">
-              <h3 className="text-lg font-semibold text-foreground">Backend & APIs</h3>
+
+            <div className="space-y-3 p-6 rounded-lg border border-border hover:border-accent transition-all group">
+              <div className="flex items-center gap-2">
+                <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center">
+                  <span className="text-accent font-semibold">02</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground group-hover:text-accent transition-colors">
+                  Integration-First Approach
+                </h3>
+              </div>
               <p className="text-muted-foreground leading-relaxed">
-                Node.js best practices, authentication systems, error handling, database optimization, and system design
-                patterns.
+                From authentication flows to deployment strategies, I document the critical paths developers actually need. 
+                Each guide is structured to minimize time-to-first-working-implementation.
               </p>
             </div>
-            <div className="space-y-3">
-              <h3 className="text-lg font-semibold text-foreground">Frontend Performance</h3>
+
+            <div className="space-y-3 p-6 rounded-lg border border-border hover:border-accent transition-all group">
+              <div className="flex items-center gap-2">
+                <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center">
+                  <span className="text-accent font-semibold">03</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground group-hover:text-accent transition-colors">
+                  Real-World Context
+                </h3>
+              </div>
               <p className="text-muted-foreground leading-relaxed">
-                Next.js optimization, DOM performance, deployment strategies, and modern JavaScript patterns for web
-                applications.
+                I don't just explain how something works—I explain when to use it, common pitfalls to avoid, and production 
+                best practices. Documentation that answers the questions developers ask before they ask them.
               </p>
             </div>
-            <div className="space-y-3">
-              <h3 className="text-lg font-semibold text-foreground">Systems & Platforms</h3>
+
+            <div className="space-y-3 p-6 rounded-lg border border-border hover:border-accent transition-all group">
+              <div className="flex items-center gap-2">
+                <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center">
+                  <span className="text-accent font-semibold">04</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground group-hover:text-accent transition-colors">
+                  Technology Agnostic
+                </h3>
+              </div>
               <p className="text-muted-foreground leading-relaxed">
-                GraphQL APIs, AWS/cloud services, database I/O optimization, and infrastructure-as-code principles.
+                While I've written extensively about Node.js, Docker, Kubernetes, GraphQL, and AWS, my approach works for 
+                any tech stack. I learn your systems quickly and document them with the same clarity and depth.
               </p>
             </div>
+          </div>
+
+          <div className="mt-12 p-8 rounded-lg border-2 border-accent/20 bg-accent/5">
+            <h3 className="text-xl font-semibold text-foreground mb-4">Technologies I've Documented</h3>
+            <div className="flex flex-wrap gap-2">
+              {[
+                "Node.js", "TypeScript", "Python", "React", "Next.js", "Docker", "Kubernetes", 
+                "CI/CD Pipelines", "AWS", "PostgreSQL", "GraphQL", "REST APIs", "Authentication Systems",
+                "Database Optimization", "Cloud Infrastructure", "Container Orchestration"
+              ].map((tech) => (
+                <Badge key={tech} variant="secondary" className="px-3 py-1 text-sm">
+                  {tech}
+                </Badge>
+              ))}
+            </div>
+            <p className="text-muted-foreground mt-4 text-sm">
+              ... and many more. If your team uses it, I can document it.
+            </p>
           </div>
         </section>
 
