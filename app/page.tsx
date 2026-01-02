@@ -14,7 +14,7 @@ export default function Home() {
             <span className="font-semibold text-lg text-foreground">techsplot</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-8 text-sm">
-            <a href="https://medium.com/@techsplot" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/writing" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
               Writing
             </a>
             <a href="#featured-work" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -88,12 +88,12 @@ export default function Home() {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a href="https://medium.com/@techsplot" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" size="lg" className="w-full sm:w-auto bg-transparent">
-                Read Articles
-                <ExternalLink className="ml-2 h-4 w-4" />
-              </Button>
-            </a>
+            <Link href="/writing">
+  <Button variant="outline" size="lg" className="w-full sm: w-auto bg-transparent">
+    Read Articles
+    <ArrowRight className="ml-2 h-4 w-4" />
+  </Button>
+</Link>
           </div>
         </section>
 
