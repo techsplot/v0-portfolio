@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, ExternalLink } from "lucide-react"
+import { Github, Linkedin, Mail, ExternalLink, Twitter } from "lucide-react"
 import Link from "next/link"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 
 export default function Home() {
   return (
@@ -32,26 +33,64 @@ export default function Home() {
       <main className="container mx-auto max-w-4xl px-4">
         <section className="py-20 md:py-32 space-y-8">
           <div className="space-y-6">
+            <p className="text-lg text-accent font-medium">Hi, I'm Olofinsawe Ayomide</p>
             <h1 className="text-balance text-5xl md:text-6xl font-bold text-foreground">
-              Technical Writing from a Software Engineer
+              Technical Writer & Software Engineer
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground text-balance">
-              I translate complex systems into practical, developer-friendly documentation. DevOps, backend
-              architecture, frontend performance, and cloud infrastructure—explained with clarity and depth.
+              I bring a software engineer's perspective to technical writing. DevOps, backend architecture, frontend
+              performance, and cloud infrastructure—explained with clarity and production-level depth.
             </p>
           </div>
 
-          {/* Call to Action */}
           <div className="flex flex-col sm:flex-row gap-4 pt-8">
-            <Link href="/writing">
-              <Button size="lg" className="w-full sm:w-auto">
-                Read Articles
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button size="lg" className="w-full sm:w-auto">
+                  Get In Touch
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-56">
+                <DropdownMenuItem asChild>
+                  <a href="mailto:ayomideb007@gmail.com" className="flex items-center gap-2 cursor-pointer">
+                    <Mail className="h-4 w-4" />
+                    <span>Gmail</span>
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <a
+                    href="https://linkedin.com/in/olofinsawe-ayomide-b958881aa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 cursor-pointer"
+                  >
+                    <Linkedin className="h-4 w-4" />
+                    <span>LinkedIn</span>
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 cursor-pointer"
+                  >
+                    <Twitter className="h-4 w-4" />
+                    <span>Twitter</span>
+                  </a>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            <Link href="/use-cases">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto bg-transparent">
+                Use Cases
                 <ExternalLink className="ml-2 h-4 w-4" />
               </Button>
             </Link>
-            <Link href="/case-studies">
+            <Link href="/writing">
               <Button variant="outline" size="lg" className="w-full sm:w-auto bg-transparent">
-                View Case Studies
+                Read Articles
+                <ExternalLink className="ml-2 h-4 w-4" />
               </Button>
             </Link>
           </div>
@@ -91,7 +130,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Publication Highlights */}
         <section className="py-20 md:py-32 space-y-12 border-t border-border">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">Published On</h2>
@@ -101,7 +139,7 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             <a
-              href="https://docs.vultr.com"
+              href="https://docs.vultr.com/author/olofinsawe-ayomide"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-4 rounded-md border border-border hover:border-accent hover:bg-secondary transition-all"
@@ -128,7 +166,7 @@ export default function Home() {
               <span className="text-sm text-muted-foreground ml-auto">Developer community</span>
             </a>
             <a
-              href="https://blog.galaxycloud.app"
+              href="https://blog.galaxycloud.app/author/ayomide"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-4 rounded-md border border-border hover:border-accent hover:bg-secondary transition-all"

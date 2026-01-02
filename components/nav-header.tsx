@@ -4,7 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 interface NavHeaderProps {
-  currentPage?: "writing" | "case-studies" | "about" | "home"
+  currentPage?: "writing" | "case-studies" | "about" | "use-cases" | "home"
 }
 
 export function NavHeader({ currentPage }: NavHeaderProps) {
@@ -26,6 +26,16 @@ export function NavHeader({ currentPage }: NavHeaderProps) {
             }
           >
             Writing
+          </Link>
+          <Link
+            href="/use-cases"
+            className={
+              currentPage === "use-cases"
+                ? "text-accent font-medium"
+                : "text-muted-foreground hover:text-foreground transition-colors"
+            }
+          >
+            Use Cases
           </Link>
           <Link
             href="/case-studies"

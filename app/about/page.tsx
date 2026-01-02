@@ -32,7 +32,9 @@ export default function AboutPage() {
           <div className="space-y-4">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground">About Me</h1>
             <p className="text-xl text-muted-foreground">
-              Technical writer and software engineer focusing on DevOps, backend systems, and cloud infrastructure.
+              Technical writer and software engineer based in Nigeria. Positioned as both roles equally, My career has
+              been defined by translating complex systems into practical, developer-friendly documentation. I write from
+              hands-on, production-level experience—not theory.
             </p>
           </div>
 
