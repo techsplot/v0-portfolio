@@ -101,21 +101,18 @@ export default function Home() {
         <section className="py-20 md:py-32 space-y-12 border-t border-border">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="space-y-2">
-              <p className="text-3xl md:text-4xl font-bold text-foreground">50+</p>
+              <p className="text-3xl md:text-4xl font-bold text-foreground">10+</p>
               <p className="text-sm text-muted-foreground">Published Articles</p>
             </div>
             <div className="space-y-2">
-              <p className="text-3xl md:text-4xl font-bold text-foreground">100K+</p>
+              <p className="text-3xl md:text-4xl font-bold text-foreground">10K+</p>
               <p className="text-sm text-muted-foreground">Readers Reached</p>
             </div>
             <div className="space-y-2">
-              <p className="text-3xl md:text-4xl font-bold text-foreground">5+</p>
+              <p className="text-3xl md:text-4xl font-bold text-foreground">2+</p>
               <p className="text-sm text-muted-foreground">Years Experience</p>
             </div>
-            <div className="space-y-2">
-              <p className="text-3xl md:text-4xl font-bold text-foreground">15+</p>
-              <p className="text-sm text-muted-foreground">Projects Shipped</p>
-            </div>
+            
           </div>
         </section>
 
