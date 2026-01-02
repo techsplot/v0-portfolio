@@ -139,7 +139,7 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             <a
-              href="https://docs.vultr.com/author/olofinsawe-ayomide"
+              href="https://docs.vultr.com/author/ayomide-olofinsawe"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-4 rounded-md border border-border hover:border-accent hover:bg-secondary transition-all"
@@ -166,7 +166,7 @@ export default function Home() {
               <span className="text-sm text-muted-foreground ml-auto">Developer community</span>
             </a>
             <a
-              href="https://blog.galaxycloud.app/author/ayomide"
+              href="https://blog.galaxycloud.app/author/ayomideb007/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-4 rounded-md border border-border hover:border-accent hover:bg-secondary transition-all"
