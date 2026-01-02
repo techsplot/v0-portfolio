@@ -241,7 +241,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Featured Work Section - TODO: UPDATE WITH REAL ARTICLES */}
+        {/* Featured Work Section */}
         <section id="featured-work" className="py-20 md:py-32 space-y-12 border-t border-border">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">Featured Work</h2>
@@ -249,8 +249,7 @@ export default function Home() {
               Case studies and technical articles demonstrating real-world solutions
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Article 1 - TODO: Replace with real article */}
+          <div className="grid md:grid-cols-3 gap-6">
             <article className="group p-6 rounded-lg border border-border hover:border-accent transition-all space-y-4">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <span className="font-medium">Vultr Docs</span>
@@ -258,83 +257,28 @@ export default function Home() {
                 <time>2024</time>
               </div>
               <h3 className="text-xl font-semibold text-foreground group-hover:text-accent transition-colors">
-                Building Production-Ready CI/CD Pipelines
+                How to Deploy a Self-Hosted OAuth2 Provider on Vultr Using Authentik and Docker Compose
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                A comprehensive guide to setting up automated deployment workflows with Docker, GitHub Actions, 
-                and cloud infrastructure for scalable applications.
+                Step-by-step guide for deploying a production-ready OAuth2 authentication provider using Authentik and Docker Compose on Vultr infrastructure. Covers container orchestration, environment configuration, and security best practices for self-hosted authentication systems.
               </p>
               <div className="flex flex-wrap gap-2">
                 <Badge variant="secondary" className="text-xs">DevOps</Badge>
-                <Badge variant="secondary" className="text-xs">CI/CD</Badge>
                 <Badge variant="secondary" className="text-xs">Docker</Badge>
+                <Badge variant="secondary" className="text-xs">OAuth2</Badge>
+                <Badge variant="secondary" className="text-xs">Authentication</Badge>
               </div>
               <a 
-                href="#" 
+                href="https://docs.vultr.com/how-to-deploy-a-self-hosted-oauth2-provider-on-vultr-using-authentik-and-docker-compose" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
               >
-                Read case study
-                <ArrowRight className="h-4 w-4" />
+                Read article
+                <ExternalLink className="h-4 w-4" />
               </a>
             </article>
 
-            {/* Article 2 - TODO: Replace with real article */}
-            <article className="group p-6 rounded-lg border border-border hover:border-accent transition-all space-y-4">
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <span className="font-medium">Medium</span>
-                <span>•</span>
-                <time>2024</time>
-              </div>
-              <h3 className="text-xl font-semibold text-foreground group-hover:text-accent transition-colors">
-                Optimizing Node.js Performance at Scale
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Deep dive into Node.js optimization techniques, from event loop management to database query 
-                optimization, with measurable performance improvements.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="text-xs">Node.js</Badge>
-                <Badge variant="secondary" className="text-xs">Performance</Badge>
-                <Badge variant="secondary" className="text-xs">Backend</Badge>
-              </div>
-              <a 
-                href="#" 
-                className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
-              >
-                Read case study
-                <ArrowRight className="h-4 w-4" />
-              </a>
-            </article>
-
-            {/* Article 3 - TODO: Replace with real article */}
-            <article className="group p-6 rounded-lg border border-border hover:border-accent transition-all space-y-4">
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <span className="font-medium">DEV.to</span>
-                <span>•</span>
-                <time>2024</time>
-              </div>
-              <h3 className="text-xl font-semibold text-foreground group-hover:text-accent transition-colors">
-                Kubernetes Deployment Strategies Explained
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Practical guide to zero-downtime deployments, rolling updates, and canary releases in production 
-                Kubernetes environments.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="text-xs">Kubernetes</Badge>
-                <Badge variant="secondary" className="text-xs">DevOps</Badge>
-                <Badge variant="secondary" className="text-xs">Cloud</Badge>
-              </div>
-              <a 
-                href="#" 
-                className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
-              >
-                Read case study
-                <ArrowRight className="h-4 w-4" />
-              </a>
-            </article>
-
-            {/* Article 4 - TODO: Replace with real article */}
             <article className="group p-6 rounded-lg border border-border hover:border-accent transition-all space-y-4">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <span className="font-medium">Galaxy Cloud Blog</span>
@@ -342,25 +286,64 @@ export default function Home() {
                 <time>2024</time>
               </div>
               <h3 className="text-xl font-semibold text-foreground group-hover:text-accent transition-colors">
-                Building Scalable GraphQL APIs
+                Error Handling and Logging in Node.js with Winston
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                From schema design to query optimization, a complete guide to building GraphQL APIs that handle 
-                millions of requests efficiently.
+                Comprehensive guide to implementing production-grade error handling and structured logging in Node.js applications using Winston. Covers log levels, custom transports, error tracking strategies, and debugging techniques for scalable backend systems.
               </p>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="text-xs">GraphQL</Badge>
-                <Badge variant="secondary" className="text-xs">API Design</Badge>
+                <Badge variant="secondary" className="text-xs">Node.js</Badge>
                 <Badge variant="secondary" className="text-xs">Backend</Badge>
+                <Badge variant="secondary" className="text-xs">Error Handling</Badge>
+                <Badge variant="secondary" className="text-xs">Logging</Badge>
               </div>
               <a 
-                href="#" 
+                href="https://blog.galaxycloud.app/error-handling-and-logging-in-node-js-with-winston/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
               >
-                Read case study
-                <ArrowRight className="h-4 w-4" />
+                Read article
+                <ExternalLink className="h-4 w-4" />
               </a>
             </article>
+
+            <article className="group p-6 rounded-lg border border-border hover:border-accent transition-all space-y-4">
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <span className="font-medium">Medium</span>
+                <span>•</span>
+                <time>2024</time>
+              </div>
+              <h3 className="text-xl font-semibold text-foreground group-hover:text-accent transition-colors">
+                How I Optimized Database I/O from 100 Seconds to 3ms Using Multi-Level Indexing
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Real-world case study demonstrating dramatic database performance improvements through strategic multi-level indexing. Deep dive into query optimization, index design patterns, and measuring performance gains in production environments.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary" className="text-xs">Database</Badge>
+                <Badge variant="secondary" className="text-xs">Performance</Badge>
+                <Badge variant="secondary" className="text-xs">PostgreSQL</Badge>
+                <Badge variant="secondary" className="text-xs">Optimization</Badge>
+              </div>
+              <a 
+                href="https://medium.com/@techsplot/how-i-optimized-database-i-o-from-100-seconds-to-3ms-using-multi-level-indexing-ef71602960c6" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
+              >
+                Read article
+                <ExternalLink className="h-4 w-4" />
+              </a>
+            </article>
+          </div>
+          <div className="flex justify-center pt-8">
+            <a href="https://medium.com/@techsplot" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline">
+                View All Articles
+                <ExternalLink className="ml-2 h-4 w-4" />
+              </Button>
+            </a>
           </div>
         </section>
 
