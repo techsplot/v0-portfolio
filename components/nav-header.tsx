@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 interface NavHeaderProps {
   currentPage?: "writing" | "case-studies" | "about" | "use-cases" | "home"
@@ -57,7 +58,11 @@ export function NavHeader({ currentPage }: NavHeaderProps) {
           >
             About
           </Link>
+          <ThemeToggle />
         </nav>
+        <div className="flex md:hidden items-center">
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   )

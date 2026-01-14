@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail, ExternalLink, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function Home() {
   return (
@@ -14,7 +15,12 @@ export default function Home() {
             <span className="font-semibold text-lg text-foreground">techsplot</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-8 text-sm">
-            <a href="/writing" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="/writing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Writing
             </a>
             <a href="#featured-work" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -27,11 +33,15 @@ export default function Home() {
               Contact
             </a>
             <a href="/Ayomide olofinsawe resume.pdf" download>
-              <Button variant="outline" size="sm" className="ml-2">
+              <Button variant="outline" size="sm" className="ml-2 bg-transparent">
                 Download Resume
               </Button>
             </a>
+            <ThemeToggle />
           </nav>
+          <div className="flex md:hidden items-center">
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
@@ -49,9 +59,9 @@ export default function Home() {
               I Turn Complex Systems Into Clear, Production-Ready Documentation
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground text-balance">
-              I help engineering teams ship faster by creating documentation that developers actually use. From DevOps pipelines 
-              to backend architecture and cloud infrastructure—I transform complex systems into actionable guides with 
-              code-level precision.
+              I help engineering teams ship faster by creating documentation that developers actually use. From DevOps
+              pipelines to backend architecture and cloud infrastructure—I transform complex systems into actionable
+              guides with code-level precision.
             </p>
           </div>
 
@@ -89,11 +99,11 @@ export default function Home() {
               </DropdownMenuContent>
             </DropdownMenu>
             <Link href="/writing">
-  <Button variant="outline" size="lg" className="w-full sm: w-auto bg-transparent">
-    Read Articles
-    <ArrowRight className="ml-2 h-4 w-4" />
-  </Button>
-</Link>
+              <Button variant="outline" size="lg" className="w-full sm:w-auto bg-transparent">
+                Read Articles
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
         </section>
 
@@ -112,7 +122,6 @@ export default function Home() {
               <p className="text-3xl md:text-4xl font-bold text-foreground">2+</p>
               <p className="text-sm text-muted-foreground">Years Experience</p>
             </div>
-            
           </div>
         </section>
 
@@ -121,11 +130,11 @@ export default function Home() {
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">How I Help Teams Ship Faster</h2>
             <p className="text-muted-foreground max-w-3xl">
-              I transform complex technical systems into clear, actionable documentation that accelerates developer onboarding 
-              and reduces integration time—no matter the technology stack.
+              I transform complex technical systems into clear, actionable documentation that accelerates developer
+              onboarding and reduces integration time—no matter the technology stack.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-3 p-6 rounded-lg border border-border hover:border-accent transition-all group">
               <div className="flex items-center gap-2">
@@ -137,9 +146,9 @@ export default function Home() {
                 </h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                I dive deep into your codebase—whether it's DevOps pipelines, backend APIs, cloud infrastructure, or 
-                frontend architecture—to create documentation with accurate code examples that developers can copy, paste, 
-                and deploy.
+                I dive deep into your codebase—whether it's DevOps pipelines, backend APIs, cloud infrastructure, or
+                frontend architecture—to create documentation with accurate code examples that developers can copy,
+                paste, and deploy.
               </p>
             </div>
 
@@ -153,8 +162,8 @@ export default function Home() {
                 </h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                From authentication flows to deployment strategies, I document the critical paths developers actually need. 
-                Each guide is structured to minimize time-to-first-working-implementation.
+                From authentication flows to deployment strategies, I document the critical paths developers actually
+                need. Each guide is structured to minimize time-to-first-working-implementation.
               </p>
             </div>
 
@@ -168,8 +177,8 @@ export default function Home() {
                 </h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                I don't just explain how something works—I explain when to use it, common pitfalls to avoid, and production 
-                best practices. Documentation that answers the questions developers ask before they ask them.
+                I don't just explain how something works—I explain when to use it, common pitfalls to avoid, and
+                production best practices. Documentation that answers the questions developers ask before they ask them.
               </p>
             </div>
 
@@ -183,8 +192,8 @@ export default function Home() {
                 </h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                While I've written extensively about Node.js, Docker, Kubernetes, GraphQL, and AWS, my approach works for 
-                any tech stack. I learn your systems quickly and document them with the same clarity and depth.
+                While I've written extensively about Node.js, Docker, Kubernetes, GraphQL, and AWS, my approach works
+                for any tech stack. I learn your systems quickly and document them with the same clarity and depth.
               </p>
             </div>
           </div>
@@ -193,9 +202,22 @@ export default function Home() {
             <h3 className="text-xl font-semibold text-foreground mb-4">Technologies I've Documented</h3>
             <div className="flex flex-wrap gap-2">
               {[
-                "Node.js", "TypeScript", "Python", "React", "Next.js", "Docker", "Kubernetes", 
-                "CI/CD Pipelines", "AWS", "PostgreSQL", "GraphQL", "REST APIs", "Authentication Systems",
-                "Database Optimization", "Cloud Infrastructure", "Container Orchestration"
+                "Node.js",
+                "TypeScript",
+                "Python",
+                "React",
+                "Next.js",
+                "Docker",
+                "Kubernetes",
+                "CI/CD Pipelines",
+                "AWS",
+                "PostgreSQL",
+                "GraphQL",
+                "REST APIs",
+                "Authentication Systems",
+                "Database Optimization",
+                "Cloud Infrastructure",
+                "Container Orchestration",
               ].map((tech) => (
                 <Badge key={tech} variant="secondary" className="px-3 py-1 text-sm">
                   {tech}
@@ -212,9 +234,7 @@ export default function Home() {
         <section className="py-20 md:py-32 space-y-12 border-t border-border">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">Tech Stack</h2>
-            <p className="text-muted-foreground">
-              Technologies I work with and write about
-            </p>
+            <p className="text-muted-foreground">Technologies I work with and write about</p>
           </div>
           <div className="flex flex-wrap gap-3">
             {[
@@ -230,7 +250,7 @@ export default function Home() {
               "CI/CD",
               "Git",
               "Python",
-              "REST APIs"
+              "REST APIs",
             ].map((tech) => (
               <Badge key={tech} variant="secondary" className="px-4 py-2 text-sm border border-border">
                 {tech}
@@ -258,16 +278,26 @@ export default function Home() {
                 How to Deploy a Self-Hosted OAuth2 Provider on Vultr Using Authentik and Docker Compose
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Step-by-step guide for deploying a production-ready OAuth2 authentication provider using Authentik and Docker Compose on Vultr infrastructure. Covers container orchestration, environment configuration, and security best practices for self-hosted authentication systems.
+                Step-by-step guide for deploying a production-ready OAuth2 authentication provider using Authentik and
+                Docker Compose on Vultr infrastructure. Covers container orchestration, environment configuration, and
+                security best practices for self-hosted authentication systems.
               </p>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="text-xs">DevOps</Badge>
-                <Badge variant="secondary" className="text-xs">Docker</Badge>
-                <Badge variant="secondary" className="text-xs">OAuth2</Badge>
-                <Badge variant="secondary" className="text-xs">Authentication</Badge>
+                <Badge variant="secondary" className="text-xs">
+                  DevOps
+                </Badge>
+                <Badge variant="secondary" className="text-xs">
+                  Docker
+                </Badge>
+                <Badge variant="secondary" className="text-xs">
+                  OAuth2
+                </Badge>
+                <Badge variant="secondary" className="text-xs">
+                  Authentication
+                </Badge>
               </div>
-              <a 
-                href="https://docs.vultr.com/how-to-deploy-a-self-hosted-oauth2-provider-on-vultr-using-authentik-and-docker-compose" 
+              <a
+                href="https://docs.vultr.com/how-to-deploy-a-self-hosted-oauth2-provider-on-vultr-using-authentik-and-docker-compose"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
@@ -287,16 +317,26 @@ export default function Home() {
                 Error Handling and Logging in Node.js with Winston
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Comprehensive guide to implementing production-grade error handling and structured logging in Node.js applications using Winston. Covers log levels, custom transports, error tracking strategies, and debugging techniques for scalable backend systems.
+                Comprehensive guide to implementing production-grade error handling and structured logging in Node.js
+                applications using Winston. Covers log levels, custom transports, error tracking strategies, and
+                debugging techniques for scalable backend systems.
               </p>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="text-xs">Node.js</Badge>
-                <Badge variant="secondary" className="text-xs">Backend</Badge>
-                <Badge variant="secondary" className="text-xs">Error Handling</Badge>
-                <Badge variant="secondary" className="text-xs">Logging</Badge>
+                <Badge variant="secondary" className="text-xs">
+                  Node.js
+                </Badge>
+                <Badge variant="secondary" className="text-xs">
+                  Backend
+                </Badge>
+                <Badge variant="secondary" className="text-xs">
+                  Error Handling
+                </Badge>
+                <Badge variant="secondary" className="text-xs">
+                  Logging
+                </Badge>
               </div>
-              <a 
-                href="https://blog.galaxycloud.app/error-handling-and-logging-in-node-js-with-winston/" 
+              <a
+                href="https://blog.galaxycloud.app/error-handling-and-logging-in-node-js-with-winston/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
@@ -316,16 +356,26 @@ export default function Home() {
                 How I Optimized Database I/O from 100 Seconds to 3ms Using Multi-Level Indexing
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Real-world case study demonstrating dramatic database performance improvements through strategic multi-level indexing. Deep dive into query optimization, index design patterns, and measuring performance gains in production environments.
+                Real-world case study demonstrating dramatic database performance improvements through strategic
+                multi-level indexing. Deep dive into query optimization, index design patterns, and measuring
+                performance gains in production environments.
               </p>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="text-xs">Database</Badge>
-                <Badge variant="secondary" className="text-xs">Performance</Badge>
-                <Badge variant="secondary" className="text-xs">PostgreSQL</Badge>
-                <Badge variant="secondary" className="text-xs">Optimization</Badge>
+                <Badge variant="secondary" className="text-xs">
+                  Database
+                </Badge>
+                <Badge variant="secondary" className="text-xs">
+                  Performance
+                </Badge>
+                <Badge variant="secondary" className="text-xs">
+                  PostgreSQL
+                </Badge>
+                <Badge variant="secondary" className="text-xs">
+                  Optimization
+                </Badge>
               </div>
-              <a 
-                href="https://medium.com/@techsplot/how-i-optimized-database-i-o-from-100-seconds-to-3ms-using-multi-level-indexing-ef71602960c6" 
+              <a
+                href="https://medium.com/@techsplot/how-i-optimized-database-i-o-from-100-seconds-to-3ms-using-multi-level-indexing-ef71602960c6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
