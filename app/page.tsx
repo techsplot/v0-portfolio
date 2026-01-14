@@ -26,7 +26,7 @@ export default function Home() {
             <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
               Contact
             </a>
-            <a href="/resume.pdf" download>
+            <a href="/Ayomide olofinsawe resume.pdf" download>
               <Button variant="outline" size="sm" className="ml-2">
                 Download Resume
               </Button>
