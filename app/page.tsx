@@ -56,12 +56,10 @@ export default function Home() {
               </Badge>
             </div>
             <h1 className="text-balance text-5xl md:text-6xl font-bold text-foreground">
-              I Turn Complex Systems Into Clear, Production-Ready Documentation
+               A Technical writer and Software engineer 
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground text-balance">
-              I help engineering teams ship faster by creating documentation that developers actually use. From DevOps
-              pipelines to backend architecture and cloud infrastructure—I transform complex systems into actionable
-              guides with code-level precision.
+              I help teams and individuals build and ship faster by turning complex systems into documentation that’s clear, practical, and actually useful.also i am currently learning elixir 
             </p>
           </div>
 
