@@ -59,7 +59,7 @@ export default function Home() {
                A Technical writer and Software engineer 
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground text-balance">
-              I help teams and individuals build and ship faster by turning complex systems into documentation that’s clear, practical, and actually useful.also i am currently learning elixir 
+              I help teams and individuals build and ship faster by turning complex systems into documentation that’s clear, practical, and actually useful.also i am currently learning elixir. 
             </p>
           </div>
 
