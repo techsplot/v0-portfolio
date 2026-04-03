@@ -265,7 +265,7 @@ export default function Home() {
               Case studies and technical articles demonstrating real-world solutions
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             <article className="group p-6 rounded-lg border border-border hover:border-accent transition-all space-y-4">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <span className="font-medium">Vultr Docs</span>
@@ -374,6 +374,46 @@ export default function Home() {
               </div>
               <a
                 href="https://medium.com/@techsplot/how-i-optimized-database-i-o-from-100-seconds-to-3ms-using-multi-level-indexing-ef71602960c6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
+              >
+                Read article
+                <ExternalLink className="h-4 w-4" />
+              </a>
+            </article>
+
+            <article className="group p-6 rounded-lg border border-border hover:border-accent transition-all space-y-4">
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <span className="font-medium">DEV Community</span>
+                <span>•</span>
+                <time>2025</time>
+              </div>
+              <h3 className="text-xl font-semibold text-foreground group-hover:text-accent transition-colors">
+                Your AI Has No Memory — Here's How to Add One with Node.js and Mem0
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Most AI chatbots forget everything the moment a conversation ends — and that's a real product problem.
+                This article breaks down why LLMs are stateless by design and walks through a practical Node.js
+                integration with Mem0 to give AI applications persistent, context-aware memory. Covers architecture
+                decisions, API setup, and the tradeoffs developers face when building memory into AI systems.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary" className="text-xs">
+                  AI
+                </Badge>
+                <Badge variant="secondary" className="text-xs">
+                  Node.js
+                </Badge>
+                <Badge variant="secondary" className="text-xs">
+                  LLM
+                </Badge>
+                <Badge variant="secondary" className="text-xs">
+                  Mem0
+                </Badge>
+              </div>
+              <a
+                href="https://dev.to/techsplot/your-ai-has-no-memory-heres-how-to-add-one-with-nodejs-and-mem0-2fbh"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
